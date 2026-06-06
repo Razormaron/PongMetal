@@ -16,13 +16,24 @@ A native Apple Silicon Pong game built with Metal and Swift. No game engine, no 
 - macOS 13 or later
 - Apple Silicon Mac (M1 or later)
 
-## Build & Run
+## Install as an app
 
 ```bash
-git clone https://github.com/marwan/PongMetal.git
+git clone https://github.com/Razormaron/PongMetal.git
+cd PongMetal
+chmod +x install.sh
+./install.sh
+```
+
+This builds the project and installs **Pong.app** into `/Applications` with the icon — ready to launch from Spotlight or the Dock.
+
+## Build & Run without installing
+
+```bash
+git clone https://github.com/Razormaron/PongMetal.git
 cd PongMetal
 swift build -c release
-.build/release/PongMetal
+.build/arm64-apple-macosx/release/PongMetal
 ```
 
 ## Sound Effects
