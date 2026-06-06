@@ -20,13 +20,12 @@ A native Apple Silicon Pong game built with Metal and Swift. No game engine, no 
 
 1. Download **PongMetal.zip** from the [latest release](https://github.com/Razormaron/PongMetal/releases/latest)
 2. Extract it — you'll get **Pong.app**
-3. Open Terminal and run:
-   ```bash
-   xattr -cr ~/Downloads/Pong.app
-   ```
-4. Move **Pong.app** to your Applications folder and double-click to play
+3. Move **Pong.app** to your Applications folder
+4. Double-click it — macOS will say it's damaged. Click **Cancel**
+5. Open **System Settings → Privacy & Security**, scroll down and click **Open Anyway**
+6. Click **Open** in the confirmation dialog — done, and you won't see it again
 
-> macOS blocks unsigned apps downloaded from the internet. The `xattr` command removes that restriction — it's safe, this is standard for open-source Mac apps.
+> This is a one-time step because the app isn't signed with a paid Apple Developer certificate. It's safe — this is standard for open-source Mac apps.
 
 ## Install from source
 
