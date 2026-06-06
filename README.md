@@ -1,6 +1,6 @@
 # PongMetal
 
-A native Apple Silicon Pong game built with Metal and Swift. No game engine, no dependencies — just pure Metal rendering at 60 fps.
+A native Apple Silicon Pong game built with Metal and Swift through vibe coding. No game engine, no dependencies — just pure Metal rendering at 60 fps.
 
 ## Features
 
