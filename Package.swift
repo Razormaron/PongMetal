@@ -8,7 +8,8 @@ let package = Package(
         .executableTarget(
             name: "PongMetal",
             path: "Sources/PongMetal",
-            resources: [.copy("Resources")]
+            resources: [.copy("Resources")],
+            linkerSettings: [.linkedFramework("AVFoundation")]
         )
     ]
 )

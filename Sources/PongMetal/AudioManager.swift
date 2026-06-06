@@ -30,8 +30,10 @@ final class AudioManager {
     func playScore()  { queue.async { [weak self] in self?.play(self?.scorePlayer)  } }
 
     private func load(_ name: String) -> AVAudioPlayer? {
-        guard let url = Bundle.module.url(forResource: name, withExtension: "mov") else {
-            print("AudioManager: missing \(name).mov")
+        let url = Bundle.module.url(forResource: name, withExtension: "mov")
+                ?? Bundle.module.url(forResource: name, withExtension: "mp3")
+        guard let url else {
+            print("AudioManager: missing \(name).mov/.mp3")
             return nil
         }
         let player = try? AVAudioPlayer(contentsOf: url)

@@ -49,12 +49,12 @@ swift build -c release
 
 ## Sound Effects
 
-The game supports three sound effects. Add your own `.mov` audio files to:
+The game supports three sound effects. Add your own `.mov` or `.mp3` files to:
 
 ```
-Sources/PongMetal/Resources/Paddle.mov   # ball hits a paddle
-Sources/PongMetal/Resources/Wall.mov     # ball hits top/bottom wall
-Sources/PongMetal/Resources/Score.mov    # a point is scored
+Sources/PongMetal/Resources/Paddle.mov  (or Paddle.mp3)
+Sources/PongMetal/Resources/Wall.mov    (or Wall.mp3)
+Sources/PongMetal/Resources/Score.mov   (or Score.mp3)
 ```
 
 Then rebuild. Without them the game runs silently.
